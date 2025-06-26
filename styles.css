@@ -1,0 +1,166 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace;
+  background: #fff;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.btn, button.btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover, button.btn:hover {
+  background: #005bb5;
+}
+
+/* Text Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top bar */
+.top-bar {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.top-bar h1 {
+  font-size: 1.75rem;
+}
+.nav-secondary {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Accordion Sections */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+details {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+summary {
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+details[open] summary {
+  background: #eee;
+}
+.projects {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* Cards */
+.project-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.project-info {
+  padding: 0.5rem;
+}
+.project-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.project-info p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.year {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.keywords {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80%;
+  overflow: auto;
+}
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .top-bar h1 {
+    font-size: 1.5rem;
+  }
+  summary {
+    font-size: 1.1rem;
+  }
+}
