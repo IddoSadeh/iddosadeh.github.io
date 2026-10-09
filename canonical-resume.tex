@@ -1,0 +1,174 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[ignoreheadfoot,top=1.15cm,bottom=1.15cm,left=1.55cm,right=1.55cm]{geometry}
+\usepackage{titlesec,enumitem,needspace,xcolor}
+\usepackage[colorlinks=true,urlcolor=black]{hyperref}
+
+\definecolor{rulegray}{HTML}{A8ADB4}
+\raggedright
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\needspace{3\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{2pt}{\color{rulegray}\titlerule}]
+\titlespacing{\section}{0pt}{0.18cm}{0.08cm}
+\newenvironment{bullets}{\begin{itemize}[topsep=0.03cm,parsep=0pt,partopsep=0pt,itemsep=0.02cm,leftmargin=11pt]}{\end{itemize}}
+\newcommand{\role}[4]{\needspace{3\baselineskip}\textbf{#1}\hfill\textbf{#2}\\[-1pt]\textit{#3}\hfill\textit{#4}\par}
+\newcommand{\project}[4]{\needspace{3\baselineskip}\textbf{#1}\hfill\textbf{#2}\\[-1pt]\textit{#3}\hfill #4\par}
+
+\begin{document}
+\begin{center}
+{\fontsize{20pt}{22pt}\selectfont\textbf{Iddo Sadeh}}\\[3pt]
+\small Vancouver, BC \;|\; \href{mailto:iddosadeh@gmail.com}{iddosadeh@gmail.com} \;|\; \href{tel:778-751-9868}{778-751-9868} \;|\; \href{https://isadeh.com}{isadeh.com} \;|\; \href{https://github.com/IddoSadeh}{GitHub} \;|\; \href{https://linkedin.com/in/iddo-s-092174166}{LinkedIn}\\[4pt]
+\textit{Software and Product Engineer - AI Systems, Full-Stack Development, Data, and Automation}
+\end{center}
+
+\vspace{-2pt}
+\section{Profile}
+Biomedical engineering graduate and software builder with experience spanning AI research infrastructure, full-stack products, data pipelines, client delivery, technical instruction, and hardware-software systems. Comfortable moving from ambiguous requirements to working software, testing it against real behavior, and documenting it for other people to operate.
+
+\section{Professional and Contract Experience}
+
+\role{AI Innovation and Growth Consultant}{Oct. 2026 - Present}{Wealth Preservation Management - Independent Contract}{Vancouver, BC}
+\begin{bullets}
+\item Retained to develop an AI-enabled inbound acquisition system spanning Google Ads, keyword and search-intent research, landing pages, SEO, conversion-rate optimization, and practical automation.
+\item Responsible for connecting campaign activity to booked meetings, qualified prospects, and funded clients so decisions can be based on business outcomes rather than clicks or form fills; current engagement is approximately four hours per week.
+\end{bullets}
+
+\role{Software Engineer, AI Research Infrastructure}{Nov. 2025 - Aug. 2026}{Plato - Independent Contract}{San Francisco, CA / Remote}
+\begin{bullets}
+\item Built and operated containerized web-application environments used to train and evaluate computer-use agents using Python, Docker, SQL, REST APIs, Playwright, and reproducible snapshots.
+\item Improved autonomous pipelines for application setup, synthetic-data generation, review, coding-agent repair, validation, and clean-state recovery across a catalog of more than 250 simulators.
+\item Evaluated AI-generated applications against real product behavior, traced failures across agent, browser, application, database, and infrastructure layers, and converted recurring issues into tooling, tests, and documentation.
+\item Contributed Python CLI and configuration fixes for environment creation, data-generation, schema-aware database setup, review, and manual recovery through Git-based pull requests and code review.
+\item Wrote reproducible defect reports and explicit coverage plans for generated applications, grouping recurring failures by root cause so the team could improve shared generators rather than repeatedly patching individual outputs.
+\end{bullets}
+
+\role{Programming, Mathematics, and Physics Instructor}{June 2021 - Present}{Independent and Yes Education - Part-Time}{Vancouver, BC}
+\begin{bullets}
+\item Taught more than 100 students in Python, Java, C++, web development, AP Computer Science, AP Calculus, AP Physics, and AMC/CAP competition preparation.
+\item Developed AP Computer Science and C++ curricula and built Python tools using Google APIs, pandas, and Excel automation to manage scheduling, attendance, and student reporting.
+\item Adapted explanations and assignments for learners aged 12 to 30 in one-on-one and small-group settings, translating technical material into concrete examples and repeatable problem-solving methods.
+\end{bullets}
+
+\role{Data Analyst, Consultant}{Oct. 2023 - Dec. 2023}{BC College of Nurses and Midwives - Consulting Contract}{Vancouver, BC}
+\begin{bullets}
+\item Built an R pipeline that standardized, validated, and reported on thousands of regulated candidate records, replacing manual processing with a repeatable quality-controlled workflow.
+\item Created standardized Excel intake templates, data-cleaning checks, and R Markdown reporting outputs, then documented the workflow for handoff to internal users.
+\end{bullets}
+
+\role{Open Source Learning Facilities Project Assistant}{May 2022 - Apr. 2023}{University of British Columbia - Part-Time Student Employment}{Vancouver, BC}
+\begin{bullets}
+\item Developed Python and Plotly Dash learning applications, migrated R and MATLAB workflows, and documented open-source course tools supporting 1,500+ students annually.
+\item Worked through Git-based review with faculty and contributors, debugging scientific-computing examples and improving the maintainability of reusable course material.
+\end{bullets}
+
+\newpage
+\section{Technical Skills}
+\begin{bullets}
+\item \textbf{Software:} Python, JavaScript/TypeScript, React, Next.js, Node.js, PHP, WordPress, C++, R, SQL, HTML/CSS, REST APIs
+\item \textbf{AI and data:} agent evaluation, RL environments, coding-agent workflows, OpenAI APIs, PostgreSQL, MySQL, pandas, NumPy, ETL, Plotly Dash
+\item \textbf{Systems and delivery:} Docker, Linux/Bash, Git/GitHub, Playwright, AWS, Cloudflare, DigitalOcean, CI/CD, automated testing, technical documentation
+\item \textbf{Graphics and hardware:} Three.js, WebGL, GLTF, ESP32, IMU sensors, embedded C++, signal processing, SolidWorks
+\end{bullets}
+
+\section{Education}
+\role{Bachelor of Applied Science in Biomedical Engineering}{Sept. 2021 - Apr. 2025}{University of British Columbia - Bioinformatics specialization}{Vancouver, BC}
+Coursework included machine learning, algorithms and data structures, databases, statistics, computational biology, signal processing, embedded systems, and software design.
+
+\section{Project Timeline - Independent Products and Commissioned Work}
+
+\project{Lexifour}{2026 - Present}{Independent vocabulary-learning product}{\href{https://lexifour.com}{Live product}}
+\begin{bullets}
+\item Built and launched a React and TypeScript product with daily challenges, accounts, leaderboards, subscriptions, and spaced-repetition practice on Cloudflare Workers and D1.
+\item Developed a Python question-curation pipeline with lexical data, semantic similarity, automated checks, versioned artifacts, source attribution, and human review.
+\item Implemented server-side game sessions, answer events, player progress, subscription entitlements, and editorial tools used to create and review question sets.
+\item Added unit and browser-flow tests for gameplay and editorial workflows while maintaining a live public web release and preparing mobile clients.
+\end{bullets}
+
+\project{Tutoring Operations Automation}{2021 - Present}{Independent internal tooling}{Python, Google APIs, pandas}
+\begin{bullets}
+\item Built tools that parse Google Calendar events, calculate hours and rates, generate formatted Excel attendance sheets, and produce templated monthly student reports.
+\item Used the system in an active tutoring practice to reduce repetitive administration while preserving manual review of schedules, rates, and student-facing records.
+\end{bullets}
+
+\project{Cohen Insurance Web Platform}{July - Aug. 2026}{Commissioned Hebrew RTL WordPress platform}{Private repository}
+\begin{bullets}
+\item Implemented 13 public routes from 24 Figma screens using a custom block theme, PHP plugin, dynamic articles, and ten independently configured lead forms.
+\item Automated local provisioning, content seeding, route and form verification, browser testing, responsive-image checks, and versioned deployment packaging.
+\item Separated presentation from durable business behavior so theme updates would not overwrite client-managed content, form configuration, credentials, or production data.
+\item Added Hebrew validation, responsive WebP delivery, reduced-motion behavior, keyboard checks, no-JavaScript fallbacks, and visual audits across desktop and mobile layouts.
+\end{bullets}
+
+\project{m.2 Interactive Product Experience}{2026}{Commissioned creative-technology project}{\href{https://isadeh.com/m2-experience/}{Live} \;|\; \href{https://github.com/IddoSadeh/m2-experience}{Code}}
+\begin{bullets}
+\item Served as sole implementation engineer for a five-page experience with Three.js/GLTF visualization, 360-degree product interaction, scroll-driven motion, synchronized media, responsive layouts, and designer-facing tuning tools.
+\item Built an interactive physiological-data interface with timelines, charts, environmental metrics, memory previews, and accessible controls for recorded experiences.
+\item Translated detailed Figma direction and Blender assets into production HTML, CSS, and JavaScript through a rapid designer-feedback cycle.
+\end{bullets}
+
+\project{Pixelf Museum Installation}{2026}{Commissioned installation for the Israel Museum}{\href{https://pixelf.fra1.digitaloceanspaces.com/index.html}{Live}}
+\begin{bullets}
+\item Built a Python service that publishes new TouchDesigner artwork to DigitalOcean Spaces with a stable QR destination, cache control, logging, and documented unattended recovery.
+\item Integrated filesystem monitoring, S3-compatible uploads, browser cache-busting, and a mobile-first visitor interface with view, download, and artist-discovery actions.
+\end{bullets}
+
+\project{Times Language Animated Poster}{2026}{Commissioned browser-based animation}{\href{https://isadeh.com}{Portfolio}}
+\begin{bullets}
+\item Implemented an 11-phase p5.js animation system with dot growth, transformations, and emergent behavior from a designer's visual direction.
+\end{bullets}
+
+\project{Smart Swimming Performance Analyzer}{2025}{UBC capstone with FORM Swim}{\href{https://github.com/IddoSadeh/form24}{Code}}
+\begin{bullets}
+\item Built an ESP32/IMU wearable, C++ firmware, and Python signal-processing workflow with ML-based stroke detection to reduce manual video analysis.
+\item Developed data acquisition, processing, visualization, and validation workflows in collaboration with FORM Swim, then presented the results to technical and non-technical stakeholders.
+\end{bullets}
+
+\project{INTK72 Interactive Pattern Concept}{2025}{Independent iPad-first web prototype}{\href{https://isadeh.com}{Portfolio}}
+\begin{bullets}
+\item Implemented a questionnaire-driven interface that transforms user responses into a personalized visual pattern for design exploration.
+\end{bullets}
+
+\project{When2Meet Interface Redesign}{2025}{UBC CPEN 441 course project}{\href{https://isadeh.com}{Portfolio}}
+\begin{bullets}
+\item Prototyped and implemented a responsive redesign of the scheduling interface, focusing on clearer availability input, visual hierarchy, and mobile interaction.
+\end{bullets}
+
+\project{AI-Powered 3D Typography Generator}{2024}{Independent web application}{\href{https://github.com/IddoSadeh/TypoScop}{Code}}
+\begin{bullets}
+\item Built a Node.js and Three.js application that uses OpenAI function calling to convert natural-language direction into interactive real-time typography visualizations.
+\item Designed structured tool calls that let the model change scene parameters while keeping rendering behavior deterministic and immediately visible in the browser.
+\end{bullets}
+
+\project{Tetris Hebrew Typography}{2024}{Independent generative-typography experiment}{\href{https://github.com/IddoSadeh/alephBetTetris}{Code}}
+\begin{bullets}
+\item Developed custom font rasterization that converts Hebrew TTF/OTF glyphs into block-based forms rendered as an interactive Three.js composition.
+\item Implemented controls for typography, animation, and composition as an experimental bridge between generative design and browser-based graphics.
+\end{bullets}
+
+\project{AP Computer Science A Textbook}{2024}{Independent curriculum and publishing project}{\href{https://isadeh.com/AP-CSA/}{Live}}
+\begin{bullets}
+\item Authored and published a structured Java curriculum for AP Computer Science A, combining explanations, examples, exercises, and material used in ongoing instruction.
+\end{bullets}
+
+\project{Windows 95 Interactive Portfolio}{2024}{Commissioned creative web project}{\href{https://isadeh.com}{Portfolio}}
+\begin{bullets}
+\item Built a browser-based portfolio around a Windows 95 visual system, translating a designer's concept into reusable windows, navigation, and responsive interactions.
+\end{bullets}
+
+\project{Medical Treatment Adherence System}{2023}{UBC biomedical engineering project}{\href{https://github.com/IddoSadeh/NasalDash}{Code}}
+\begin{bullets}
+\item Designed circuitry and component communication, built a cloud-backed patient database, generated test data, and developed a Plotly Dash clinician dashboard for an ESP32-enabled adherence-monitoring prototype.
+\item Connected the wearable concept, Bluetooth-enabled patient workflow, React interface, Google Cloud storage, and clinician-facing analytics into an end-to-end system design.
+\end{bullets}
+
+\project{Plotly Sketch and Annotation Tool}{2022}{UBC open-source learning project}{\href{https://github.com/IddoSadeh}{GitHub}}
+\begin{bullets}
+\item Built an experimental image annotation and editing interface in Python and Plotly Dash while migrating scientific-learning workflows from R and MATLAB.
+\item Added reusable interaction patterns and documentation for open-source instructional material maintained by multiple contributors.
+\end{bullets}
+
+\project{Anti-Covid Proximity Belt}{2021}{Langara College sensor prototype}{Arduino, ultrasonic and PIR sensors}
+\begin{bullets}
+\item Built a wearable prototype that combined ultrasonic and PIR sensors to detect breaches of a configurable personal-space boundary and trigger an alert.
+\end{bullets}
+
+\end{document}
